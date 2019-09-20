@@ -1,0 +1,20 @@
+{
+  "groups": [
+    {
+      "name": "diamondPlaceHolder",
+      "type": "com.izuche.processor.DiamondEnvironmentPostProcessor",
+      "sourceType": "com.izuche.processor.DiamondEnvironmentPostProcessor"
+    }
+  ],
+  "properties":[
+    {
+      "name": "spring.izuche.diamond",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.izuche.processor.DiamondEnvironmentPostProcessor"
+    },{
+      "name": "spring.izuche.diamond.groupa-data-id",
+      "type": "java.lang.String",
+      "sourceType": "com.izuche.processor.DiamondEnvironmentPostProcessor"
+    }
+  ]
+}

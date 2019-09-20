@@ -65,6 +65,7 @@ public class RefreshBeanPostProcessor implements BeanPostProcessor, DiamondRefre
                 }
             }
         });
+        // todo 添加static刷新
         return bean;
     }
 

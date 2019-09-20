@@ -1,0 +1,9 @@
+com\izuche\config\RefreshHolder$RefreshTest.class
+com\izuche\interfaces\impl\ValueManagerListner.class
+com\izuche\config\RefreshHolder.class
+com\izuche\processor\RefreshBeanFactoryProcessor.class
+com\izuche\processor\RefreshBeanPostProcessor$DependencyDescriptorClass.class
+com\izuche\processor\RefreshBeanPostProcessor.class
+com\izuche\config\BeanProcessorsConfig.class
+com\izuche\interfaces\DiamondRefresh.class
+com\izuche\processor\DiamondEnvironmentPostProcessor.class
