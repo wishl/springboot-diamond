@@ -25,14 +25,14 @@ public class DiamondEnvironmentPostProcessor implements EnvironmentPostProcessor
         // 读取
         try {
             String activeProfiles = environment.getActiveProfiles()[0];
-            log.info("当前环境:"+activeProfiles);
+            System.out.println("====>当前环境"+activeProfiles);
             System.setProperty("current.profile",activeProfiles);
             PropertySource<?> propertySource = environment.getPropertySources().get("applicationConfig: [classpath:/application.properties]");
             Object isDiamond = propertySource.getProperty("spring.izuche.diamond");
             Object groupAndDataID = propertySource.getProperty("spring.izuche.diamond.group-data-id");
 
             if(isDiamond==null||groupAndDataID==null){
-                log.info("============>未配置diamond,不使用");
+                System.out.println("============>未配置diamond,不使用");
                 return;
             }
             String[] groupsAndDataID = groupAndDataID.toString().split(",");
@@ -51,7 +51,7 @@ public class DiamondEnvironmentPostProcessor implements EnvironmentPostProcessor
                     environment.getPropertySources().addLast(propertiesPropertySource);
                 }
             }else{
-                  log.info("diamond未启用");
+                System.out.println("=====>diamond未启用");
             }
         } catch (Exception e) {
             e.printStackTrace();
