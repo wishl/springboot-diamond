@@ -29,7 +29,7 @@ public class DiamondEnvironmentPostProcessor implements EnvironmentPostProcessor
             System.setProperty("current.profile",activeProfiles);
             PropertySource<?> propertySource = environment.getPropertySources().get("applicationConfig: [classpath:/application.properties]");
             Object isDiamond = propertySource.getProperty("spring.izuche.diamond");
-            Object groupAndDataID = propertySource.getProperty("spring.izuche.diamond.groupa-data-id");
+            Object groupAndDataID = propertySource.getProperty("spring.izuche.diamond.group-data-id");
 
             if(isDiamond==null||groupAndDataID==null){
                 log.info("============>未配置diamond,不使用");
