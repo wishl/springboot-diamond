@@ -12,7 +12,7 @@
       "type": "java.lang.Boolean",
       "sourceType": "com.izuche.processor.DiamondEnvironmentPostProcessor"
     },{
-      "name": "spring.izuche.diamond.groupa-data-id",
+      "name": "spring.izuche.diamond.group-data-id",
       "type": "java.lang.String",
       "sourceType": "com.izuche.processor.DiamondEnvironmentPostProcessor"
     }
